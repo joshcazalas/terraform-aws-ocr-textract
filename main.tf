@@ -11,7 +11,7 @@ resource "aws_lambda_function" "test_lambda_function" {
   layers       = [data.aws_lambda_layer_version.my_layer.arn]
 
   # Function code
-  filename     = "path/to/lambda.zip"
+  filename     = "lambda/handler.zip"
   source_code_hash = filebase64sha256("path/to/lambda.zip")
 }
 

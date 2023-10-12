@@ -10,3 +10,7 @@
 
 # Ignore Terraform variables file (for sensitive data)
 terraform.tfvars
+
+# Ignore JS files
+*.js
+*.d.ts
